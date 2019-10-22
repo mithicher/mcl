@@ -114,3 +114,6 @@ Route::post('/resume/generated', function () {
     $resumedata = request('resumedata');
     return Inertia::render('ResumeGenerated', compact('resumedata'));
 });
+
+Route::post('/changePassword', 'SettingsController@changePassword')->name('settings.changePassword');
+Route::post('/changeEmail', 'SettingsController@changeEmail')->name('settings.changeEmail');
