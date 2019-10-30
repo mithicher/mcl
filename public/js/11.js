@@ -1,5 +1,45 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[11],{
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/ContactUs.vue?vue&type=script&lang=js&":
+/*!***************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/ContactUs.vue?vue&type=script&lang=js& ***!
+  \***************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Shared_tuis_Heading__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Shared/tuis/Heading */ "./resources/js/Shared/tuis/Heading.vue");
+/* harmony import */ var _Shared_tuis_MailTo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Shared/tuis/MailTo */ "./resources/js/Shared/tuis/MailTo.vue");
+/* harmony import */ var _Shared_tuis_Card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Shared/tuis/Card */ "./resources/js/Shared/tuis/Card.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+var MailtoUI = __webpack_require__(/*! mailtoui/dist/mailtoui-min.js */ "./node_modules/mailtoui/dist/mailtoui-min.js");
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    Heading: _Shared_tuis_Heading__WEBPACK_IMPORTED_MODULE_0__["default"],
+    MailTo: _Shared_tuis_MailTo__WEBPACK_IMPORTED_MODULE_1__["default"],
+    Card: _Shared_tuis_Card__WEBPACK_IMPORTED_MODULE_2__["default"]
+  },
+  mounted: function mounted() {
+    MailtoUI.run();
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Faq.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Faq.vue?vue&type=script&lang=js& ***!
@@ -18,6 +58,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_tuis_LinkTo__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/Shared/tuis/LinkTo */ "./resources/js/Shared/tuis/LinkTo.vue");
 /* harmony import */ var _Shared_tuis_MailTo__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/Shared/tuis/MailTo */ "./resources/js/Shared/tuis/MailTo.vue");
 /* harmony import */ var _Shared_tuis_Card__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/Shared/tuis/Card */ "./resources/js/Shared/tuis/Card.vue");
+/* harmony import */ var _Pages_ContactUs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/Pages/ContactUs */ "./resources/js/Pages/ContactUs.vue");
 //
 //
 //
@@ -130,6 +171,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
 
 
 
@@ -149,7 +210,8 @@ __webpack_require__.r(__webpack_exports__);
     List: _Shared_tuis_List__WEBPACK_IMPORTED_MODULE_5__["default"],
     LinkTo: _Shared_tuis_LinkTo__WEBPACK_IMPORTED_MODULE_6__["default"],
     Card: _Shared_tuis_Card__WEBPACK_IMPORTED_MODULE_8__["default"],
-    MailTo: _Shared_tuis_MailTo__WEBPACK_IMPORTED_MODULE_7__["default"]
+    MailTo: _Shared_tuis_MailTo__WEBPACK_IMPORTED_MODULE_7__["default"],
+    ContactUs: _Pages_ContactUs__WEBPACK_IMPORTED_MODULE_9__["default"]
   }
 });
 
@@ -488,6 +550,57 @@ if(false) {}
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/ContactUs.vue?vue&type=template&id=5b442885&":
+/*!*******************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/ContactUs.vue?vue&type=template&id=5b442885& ***!
+  \*******************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    { staticClass: "max-w-4xl mx-auto" },
+    [
+      _c(
+        "heading",
+        { staticClass: "text-center mt-10" },
+        [
+          _vm._v("\n\t\tQuestions? Drop us an email at\n\t\t"),
+          _c(
+            "mail-to",
+            {
+              attrs: {
+                subject: "Find any difficulty?",
+                to: "hello@jobsharbour.com"
+              }
+            },
+            [_vm._v("hello@jobsharbour.com")]
+          ),
+          _vm._v(".\n\t\t"),
+          _c("br"),
+          _vm._v("We usually get back within 24 hours.\n\t")
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Faq.vue?vue&type=template&id=0484b006&":
 /*!*************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Faq.vue?vue&type=template&id=0484b006& ***!
@@ -540,6 +653,7 @@ var render = function() {
                         },
                         [_vm._v("Why jobs harbour?")]
                       ),
+                      _vm._v(" "),
                       _c("p", [
                         _vm._v(
                           "Here we come with the best platform where you can showcase your job lists, communicate with a mass of potential candidates in no time and also pick up the best out of them."
@@ -557,11 +671,12 @@ var render = function() {
                         },
                         [_vm._v("Is registration on the Jobs Harbour free?")]
                       ),
+                      _vm._v(" "),
                       _c(
                         "p",
                         [
                           _vm._v(
-                            "Yes. Registration is free for job seekers and job creators. "
+                            "\n\t\t\t\t\t\t\tYes. Registration is free for job seekers and job creators.\n\t\t\t\t\t\t\t"
                           ),
                           _c("link-to", { attrs: { to: "/register" } }, [
                             _vm._v("Register here")
@@ -585,11 +700,12 @@ var render = function() {
                           )
                         ]
                       ),
+                      _vm._v(" "),
                       _c(
                         "p",
                         [
                           _vm._v(
-                            "You can contact our customer support team at "
+                            "\n\t\t\t\t\t\t\tYou can contact our customer support team at\n\t\t\t\t\t\t\t"
                           ),
                           _c(
                             "mail-to",
@@ -611,6 +727,7 @@ var render = function() {
                         },
                         [_vm._v("What types of Profiles do you have?")]
                       ),
+                      _vm._v(" "),
                       _c("p", [
                         _vm._v(
                           "At Jobs Harbour you will find a wide range of Profiles in terms of educational qualifications, functional area, years of professional experience, preferences, locations etc."
@@ -738,46 +855,6 @@ var render = function() {
                           attrs: { slot: "title" },
                           slot: "title"
                         },
-                        [
-                          _vm._v(
-                            "How is Job matching different from Job Search?"
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "mb-3" }, [
-                        _vm._v(
-                          'You can set your profile status under the Account Details by clicking on the "General" tab of "My Profile". You have the following two options for your profile status:'
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "mb-3" }, [
-                        _vm._v(
-                          "Job matching is different from Job search because it's not based just on keyword search."
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", { staticClass: "mb-3" }, [
-                        _vm._v(
-                          "Job Matching happens on a comprehensive matching engine built on artificial intelligence. This engine provides you with an instant and reciprocal match based on the degree of relevance between your profile and preferences on one hand and job requirements on the other hand."
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c("p", [
-                        _vm._v(
-                          "Also, you get a real time updates on matched jobs as more and more jobs are posted by employers."
-                        )
-                      ])
-                    ]),
-                    _vm._v(" "),
-                    _c("accordion", [
-                      _c(
-                        "div",
-                        {
-                          staticClass: "text-lg text-gray-800 font-medium",
-                          attrs: { slot: "title" },
-                          slot: "title"
-                        },
                         [_vm._v("How can I search jobs?")]
                       ),
                       _vm._v(" "),
@@ -833,6 +910,7 @@ var render = function() {
                         },
                         [_vm._v("How to post a job?")]
                       ),
+                      _vm._v(" "),
                       _c("p", [
                         _vm._v(
                           "It is easy! All you need to do is enter the job information on the Portal and it will be posted."
@@ -850,17 +928,18 @@ var render = function() {
                         },
                         [_vm._v("Do you charge anything for posting jobs?")]
                       ),
+                      _vm._v(" "),
                       _c(
                         "p",
                         [
                           _vm._v(
-                            "No, this is not paid service for Employers but yes, for Consultancy. One consultancy can add 5 companys' at a time. If they want to add more jobs you need to buy our "
+                            "\n\t\t\t\t\t\t\tNo, this is not paid service for Employers but yes, for Consultancy. One consultancy can add 5 companys' at a time. If they want to add more jobs you need to buy our\n\t\t\t\t\t\t\t"
                           ),
                           _c("link-to", { attrs: { to: "/for-employers" } }, [
                             _vm._v("premium version")
                           ]),
                           _vm._v(
-                            ". Once you post the opening, you will start receiving relevant applications in your inbox."
+                            ". Once you post the opening, you will start receiving relevant applications in your inbox.\n\t\t\t\t\t\t"
                           )
                         ],
                         1
@@ -881,6 +960,7 @@ var render = function() {
                           )
                         ]
                       ),
+                      _vm._v(" "),
                       _c("p", [
                         _vm._v(
                           "You can filter for a specific category and view Profile listing corresponding to that category. The resumes are listed generally in the reverse chronological order. It means the latest addition would be on the top."
@@ -902,11 +982,12 @@ var render = function() {
                           )
                         ]
                       ),
+                      _vm._v(" "),
                       _c(
                         "p",
                         [
                           _vm._v(
-                            "Please check your user id and password , Sign-in details are case-sensitive. Delete cookies and disable JavaScript from your web browser. If issues persist, send us mail at "
+                            "\n\t\t\t\t\t\t\tPlease check your user id and password , Sign-in details are case-sensitive. Delete cookies and disable JavaScript from your web browser. If issues persist, send us mail at\n\t\t\t\t\t\t\t"
                           ),
                           _c(
                             "mail-to",
@@ -925,7 +1006,9 @@ var render = function() {
             )
           ],
           1
-        )
+        ),
+        _vm._v(" "),
+        _c("contact-us")
       ],
       1
     )
@@ -1368,6 +1451,75 @@ function normalizeComponent (
     options: options
   }
 }
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ContactUs.vue":
+/*!******************************************!*\
+  !*** ./resources/js/Pages/ContactUs.vue ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ContactUs_vue_vue_type_template_id_5b442885___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactUs.vue?vue&type=template&id=5b442885& */ "./resources/js/Pages/ContactUs.vue?vue&type=template&id=5b442885&");
+/* harmony import */ var _ContactUs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ContactUs.vue?vue&type=script&lang=js& */ "./resources/js/Pages/ContactUs.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ContactUs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ContactUs_vue_vue_type_template_id_5b442885___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ContactUs_vue_vue_type_template_id_5b442885___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/ContactUs.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ContactUs.vue?vue&type=script&lang=js&":
+/*!*******************************************************************!*\
+  !*** ./resources/js/Pages/ContactUs.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactUs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactUs.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/ContactUs.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactUs_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/ContactUs.vue?vue&type=template&id=5b442885&":
+/*!*************************************************************************!*\
+  !*** ./resources/js/Pages/ContactUs.vue?vue&type=template&id=5b442885& ***!
+  \*************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactUs_vue_vue_type_template_id_5b442885___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ContactUs.vue?vue&type=template&id=5b442885& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/ContactUs.vue?vue&type=template&id=5b442885&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactUs_vue_vue_type_template_id_5b442885___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ContactUs_vue_vue_type_template_id_5b442885___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
 
 
 /***/ }),

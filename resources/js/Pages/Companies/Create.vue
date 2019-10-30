@@ -107,91 +107,91 @@
 </template>
 
 <script>
-import Layout from "@/Shared/Layout";
-import Heading from "@/Shared/tuis/Heading";
-import Icon from "@/Shared/tuis/Icon";
-import LinkTo from "@/Shared/tuis/LinkTo";
-import Card from "@/Shared/tuis/Card";
-import TextInput from "@/Shared/tuis/TextInput";
-import SelectInput from "@/Shared/tuis/SelectInput";
-import LoadingButton from "@/Shared/tuis/LoadingButton";
-import SimpleEditor from "@/Shared/tuis/SimpleEditor";
-import SwitchInput from "@/Shared/tuis/SwitchInput";
-import DateInput from "@/Shared/tuis/DateInput";
-import Alert from "@/Shared/tuis/Alert";
-import TextareaInput from "@/Shared/tuis/TextareaInput";
-import FileInput from "@/Shared/tuis/FileInput";
-import EmptyState from "@/Shared/tuis/EmptyState";
+	import Layout from "@/Shared/Layout";
+	import Heading from "@/Shared/tuis/Heading";
+	import Icon from "@/Shared/tuis/Icon";
+	import LinkTo from "@/Shared/tuis/LinkTo";
+	import Card from "@/Shared/tuis/Card";
+	import TextInput from "@/Shared/tuis/TextInput";
+	import SelectInput from "@/Shared/tuis/SelectInput";
+	import LoadingButton from "@/Shared/tuis/LoadingButton";
+	import SimpleEditor from "@/Shared/tuis/SimpleEditor";
+	import SwitchInput from "@/Shared/tuis/SwitchInput";
+	import DateInput from "@/Shared/tuis/DateInput";
+	import Alert from "@/Shared/tuis/Alert";
+	import TextareaInput from "@/Shared/tuis/TextareaInput";
+	import FileInput from "@/Shared/tuis/FileInput";
+	import EmptyState from "@/Shared/tuis/EmptyState";
 
-export default {
-	components: {
-		Layout,
-		Heading,
-		Icon,
-		LinkTo,
-		Card,
-		TextInput,
-		SelectInput,
-		SimpleEditor,
-		LoadingButton,
-		SwitchInput,
-		DateInput,
-		Alert,
-		TextareaInput,
-		FileInput,
-		EmptyState
-	},
-	props: ["industries", "errors"],
-	data() {
-		return {
-			form: {
-				company_logo: null,
-				company_name: null,
-				company_website: null,
-				company_no_of_employees: null,
-				company_industry: null,
-				company_description: null,
-				company_benefits: null
-			},
-			companySize: {
-				"0-25": "0-25",
-				"25-50": "25-50",
-				"50-100": "50-100",
-				"100+": "100+"
+	export default {
+		components: {
+			Layout,
+			Heading,
+			Icon,
+			LinkTo,
+			Card,
+			TextInput,
+			SelectInput,
+			SimpleEditor,
+			LoadingButton,
+			SwitchInput,
+			DateInput,
+			Alert,
+			TextareaInput,
+			FileInput,
+			EmptyState
+		},
+		props: ["industries", "errors"],
+		data() {
+			return {
+				form: {
+					company_logo: null,
+					company_name: null,
+					company_website: null,
+					company_no_of_employees: null,
+					company_industry: null,
+					company_description: null,
+					company_benefits: null
+				},
+				companySize: {
+					"0-25": "0-25",
+					"25-50": "25-50",
+					"50-100": "50-100",
+					"100+": "100+"
+				}
+			};
+		},
+		methods: {
+			saveJobPost() {
+				this.$refs.companySaveButton.startLoading();
+
+				var data = new FormData();
+
+				data.append("company_logo", this.form.company_logo || "");
+				data.append("company_name", this.form.company_name || "");
+				data.append("company_website", this.form.company_website || "");
+				data.append(
+					"company_no_of_employees",
+					this.form.company_no_of_employees || ""
+				);
+				data.append("company_industry", this.form.company_industry || "");
+				data.append(
+					"company_description",
+					this.form.company_description || ""
+				);
+				data.append("company_benefits", this.form.company_benefits || "");
+
+				this.$inertia
+					.post(this.route("admin.companies.store"), data)
+					.then(() => {
+						this.$refs.companySaveButton.stopLoading();
+					})
+					.catch(() => {
+						this.$refs.companySaveButton.stopLoading();
+					});
 			}
-		};
-	},
-	methods: {
-		saveJobPost() {
-			this.$refs.companySaveButton.startLoading();
-
-			var data = new FormData();
-
-			data.append("company_logo", this.form.company_logo || "");
-			data.append("company_name", this.form.company_name || "");
-			data.append("company_website", this.form.company_website || "");
-			data.append(
-				"company_no_of_employees",
-				this.form.company_no_of_employees || ""
-			);
-			data.append("company_industry", this.form.company_industry || "");
-			data.append(
-				"company_description",
-				this.form.company_description || ""
-			);
-			data.append("company_benefits", this.form.company_benefits || "");
-
-			this.$inertia
-				.post(this.route("admin.companies.store"), data)
-				.then(() => {
-					this.$refs.companySaveButton.stopLoading();
-				})
-				.catch(() => {
-					this.$refs.companySaveButton.stopLoading();
-				});
 		}
-	}
-};
+	};
 </script>
 
 <style>
