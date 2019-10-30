@@ -62,7 +62,7 @@
 </script>
 
 <style>
-.table-striped tbody tr:nth-child(even) {
+/* .table-striped tbody tr:nth-child(even) {
 	background-color: #f7fafc;
-}
+} */
 </style>
